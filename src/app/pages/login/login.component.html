@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="logoImage">
+      <app-logo class="logoIcon" [height]="64" [width]="64"></app-logo>
+      <app-logo-text></app-logo-text>
+    </div>
+    <form
+      (ngSubmit)="onSubmit()"
+      [formGroup]="addUserForm"
+      class="formFillData"
+    >
+      <div class="inputBox">
+        <div class="icon">
+          <img src="../../../../assets/icon/user.png" alt="user icon" />
+        </div>
+        <input
+          type="text"
+          placeholder="{{ placeholderEmail }}"
+          spellCheck="{false}"
+          class="inputElement"
+          width="width"
+          height="height"
+          name="email"
+          formControlName="email"
+        />
+        <div class="messageError">{{ errorEmail }}</div>
+      </div>
+      <div class="inputBox">
+        <div class="icon">
+          <img src="../../../../assets/icon/lock.png" alt="user icon" />
+        </div>
+        <input
+          type="text"
+          placeholder="{{ placeholderPass }}"
+          spellCheck="{false}"
+          class="inputElement"
+          width="width"
+          height="height"
+          name="password"
+          formControlName="password"
+        />
+        <div class="messageError">
+          {{ errorPassword }}
+        </div>
+      </div>
+      <div class="forgotPassword">
+        <p>Forgot Password?</p>
+      </div>
+      <div class="submitWrapper">
+        <button class="submitBtn" type="submit" name="submit">LOGIN</button>
+      </div>
+    </form>
+  </div>
+</div>

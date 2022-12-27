@@ -1,0 +1,113 @@
+.wrapper {
+  max-width: 650px;
+  min-height: 540px;
+  margin: auto !important;
+  padding: 24px 48px 42;
+  background-image: linear-gradient(to top, #94c7fa -26%, #ded7e7 112%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+
+  .logoImage {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .logoIcon {
+      padding-bottom: 40px;
+    }
+  }
+  .formFillData {
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .inputBox {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-basis: auto;
+      background-color: #f1f1f2;
+      padding-right: 1em;
+      height: 55px;
+      caret-color: rgb(254, 44, 85);
+      border-radius: 15px;
+      margin: 1em 0 !important;
+      position: relative;
+      .icon {
+        background-color: #5c92e4;
+        width: 54px;
+        height: 100%;
+        flex-grow: 0;
+        padding: 13px 27px;
+        border-radius: 15px;
+
+        background-color: #5c92e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 24;
+        }
+      }
+      input {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        border: none;
+        background-color: #f1f1f2;
+
+        outline: #818890;
+        padding-left: 1em !important;
+
+        width: 600px;
+        caret-color: rgb(254, 44, 85);
+        flex-grow: 2;
+        caret-color: var(--primary);
+      }
+      input:not(:placeholder-shown) ~ .btnIconSearch {
+        color: rgba(22, 24, 35, 0.75);
+      }
+    }
+    .forgotPassword {
+      width: 80%;
+
+      p {
+        text-align: right;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.submitWrapper {
+  width: 80%;
+  display: inline-flex;
+  justify-content: flex-end;
+  .submitBtn {
+    height: 55px;
+    width: 150px;
+    padding: 0.8em 0px;
+    margin: 1em 0;
+
+    border-radius: 30px;
+    background-color: #5c92e4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none !important;
+    letter-spacing: 1px;
+    text-align: center;
+    :hover {
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
